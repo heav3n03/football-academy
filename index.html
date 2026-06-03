@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elite Football Academy</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+⚽ ELITE FOOTBALL ACADEMY
+</div>
+
+<ul>
+<li><a href="#shooting">Shooting</a></li>
+<li><a href="#dribbling">Dribbling</a></li>
+<li><a href="#passing">Passing</a></li>
+<li><a href="#vision">Vision</a></li>
+<li><a href="#space">Space Creation</a></li>
+<li><a href="#fitness">Fitness</a></li>
+<li><a href="#recovery">Recovery</a></li>
+</ul>
+
+</nav>
+
+<header>
+
+<h1>Train Like A Professional</h1>
+
+<p>
+Personalized football development powered by your player profile.
+</p>
+
+<button onclick="scrollToSurvey()">
+Start Assessment
+</button>
+
+</header>
+
+<section class="survey" id="survey">
+
+<h2>Player Assessment</h2>
+
+<input type="text" id="name" placeholder="Player Name">
+
+<input type="number" id="age" placeholder="Age">
+
+<input type="number" id="weight" placeholder="Weight">
+
+<select id="position">
+<option>Striker</option>
+<option>Winger</option>
+<option>Midfielder</option>
+<option>Defender</option>
+<option>Goalkeeper</option>
+</select>
+
+<select id="fitness">
+
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+
+</select>
+
+<textarea id="strengths" placeholder="Strengths"></textarea>
+
+<textarea id="weaknesses" placeholder="Weaknesses"></textarea>
+
+<button onclick="generatePlan()">
+Generate My Plan
+</button>
+
+</section>
+
+<section class="plan">
+
+<h2>Your Personalized Plan</h2>
+
+<div id="output">
+
+Your training plan will appear here.
+
+</div>
+
+</section>
+
+<section class="dashboard">
+
+<h2>Performance Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Shooting</h3>
+<div class="progress">
+<div class="fill" style="width:75%"></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Passing</h3>
+<div class="progress">
+<div class="fill" style="width:60%"></div>
+</div>
+</div>
+
+<div class="card">
+<h3>Fitness</h3>
+<div class="progress">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="shooting" class="skills">
+
+<h2>Shooting</h2>
+
+<video controls width="100%">
+<source src="videos/demo.mp4">
+</video>
+
+<ul>
+<li>100 Power Shots</li>
+<li>50 Weak Foot Finishes</li>
+<li>1v1 Finishing</li>
+</ul>
+
+</section>
+
+<section id="dribbling" class="skills">
+
+<h2>Dribbling</h2>
+
+<ul>
+<li>Cone Weaving</li>
+<li>Ball Mastery</li>
+<li>Quick Touch Drills</li>
+</ul>
+
+</section>
+
+<section id="passing" class="skills">
+
+<h2>Passing</h2>
+
+<ul>
+<li>Wall Passing</li>
+<li>One Touch Passing</li>
+<li>Long Ball Accuracy</li>
+</ul>
+
+</section>
+
+<section id="vision" class="skills">
+
+<h2>Vision</h2>
+
+<ul>
+<li>Scanning Drill</li>
+<li>Decision Making Games</li>
+<li>Peripheral Awareness</li>
+</ul>
+
+</section>
+
+<section id="space" class="skills">
+
+<h2>Space Creation</h2>
+
+<ul>
+<li>Movement Off The Ball</li>
+<li>Third Man Runs</li>
+<li>Shadow Play</li>
+</ul>
+
+</section>
+
+<section id="fitness" class="skills">
+
+<h2>Fitness</h2>
+
+<ul>
+<li>HIIT Running</li>
+<li>Sprint Intervals</li>
+<li>Agility Ladder</li>
+</ul>
+
+</section>
+
+<section id="recovery" class="skills">
+
+<h2>Recovery</h2>
+
+<ul>
+<li>Stretching</li>
+<li>Ice Bath</li>
+<li>Sleep Tracking</li>
+</ul>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
